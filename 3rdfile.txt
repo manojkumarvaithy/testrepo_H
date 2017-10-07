@@ -1,0 +1,7 @@
+1st line
+2nd line
+3rd line
+creating this file from vi editor
+vi filename.txt
+esc :wq
+
