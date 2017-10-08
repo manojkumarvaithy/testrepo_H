@@ -1,0 +1,17 @@
+<target name ="init">
+	<mkdir dir ="build/classes"/>
+	<mkdir dir ="dist"/>
+</target>
+<target name ="compile" depends="init">
+<javac srcdir="src" destdir="build/classes"/>
+</target>
+<target name ="compress" depends="compile">
+<jar destfile="dist/Helloworld.jar basedir="build/classes"/>
+</target>
+<target name ="execute" depends="compile">
+	<java classname="" classpath="build/classes"/>
+</target>
+<target name="clean">
+	<delete dir="build/classes"/>
+	<delete dir="dist"/>
+</target>
